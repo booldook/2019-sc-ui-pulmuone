@@ -1,5 +1,11 @@
+.container:not(:first-child) {margin-top: 150px;}
 .navs {background-color: hotpink; color:#fff;}
 .navs > li {float: left; padding: 1rem; width: 150px; text-align: center; position: relative; cursor: pointer;}
 .subs {background-color: indigo; padding: 0.5rem; position: absolute; width: 100%; left: 0; top:3.1rem; display: none;}
 .subs > li {padding: 0.5rem; cursor: pointer;}
 .subs > li:hover {background-color: lightpink; color: indigo;}
+
+.navs2 {background-color: hotpink; color:#fff;}
+.navs2 > div {float: left; padding: 1rem; width:150px; text-align: center;}
+.navs2 > ul {float: right;}
+.navs2 > ul > li {float: left; padding: 1rem; width: 150px; text-align: center; cursor: pointer;}
