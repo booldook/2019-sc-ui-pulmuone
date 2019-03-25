@@ -14,3 +14,10 @@ $("#navs2 > ul > li").mouseover(function(){
 $("#navs2").mouseleave(function(){
 	$(".subs2").slideUp(100);
 });
+
+$("#navs3 .mn_nav").mouseover(function(){
+	$(".subs3").slideDown(100);
+});
+$("#navs3 > ul").mouseleave(function(){
+	$(".subs3").slideUp(100);
+});

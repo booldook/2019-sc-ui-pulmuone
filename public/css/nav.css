@@ -16,3 +16,14 @@ body {height: 10000px;}
 .subs2 .sub {width: 150px;}
 .subs2 .sub > li {padding: 1rem; text-align: center; cursor: pointer;}
 .subs2 .sub > li:hover {background-color: indigo; color: #fff;}
+
+.navs3 {background-color: hotpink; color:#fff;}
+.navs3 > div:first-child {float: left; padding: 1rem; width:150px; text-align: center;}
+.navs3 > ul {float: right; padding: 0 1rem; position: relative;}
+.navs3 > ul > .mn_nav {float: left; padding: 1rem; width: 150px; text-align: center; cursor: pointer;}
+.subs3 {width: 100%; padding: 1rem 0; background-color: lightpink; position: absolute; top: 3.1rem; left: 0; display: none;}
+.subs3 > ul {float: right; padding-right: 1rem;}
+.subs3 > ul > li {float: left;}
+.subs3 .sub {width: 150px;}
+.subs3 .sub > li {padding: 1rem; text-align: center; cursor: pointer;}
+.subs3 .sub > li:hover {background-color: indigo; color: #fff;}
