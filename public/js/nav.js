@@ -7,3 +7,10 @@ $("#navs1 > li").hover(function(){
 }, function(){
 	$(this).find(".subs").slideUp(100);
 });
+
+$("#navs2 > ul > li").mouseover(function(){
+	$(".subs2").slideDown(100);
+});
+$("#navs2").mouseleave(function(){
+	$(".subs2").slideUp(100);
+});
