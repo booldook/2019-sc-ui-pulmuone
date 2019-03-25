@@ -1,0 +1,18 @@
+/***** 폰트 *****/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+html, body {font-family: 'Noto Sans KR', sans-serif;}
+
+/***** 공통사항 *****/
+.wraps {width: 100%;}
+.wrap {width: 100%; max-width: 1180px; margin: 0 auto;}
+
+/***** 네비게이션 *****/
+.tops {display: flex; justify-content: flex-end; align-items: center; font-size: 0.75rem; height: 3rem;}
+.tops > span {padding:0 1rem; font-size: 0.5rem;}
+.navs {display: flex; align-items: center;}
+.navs > .logo {flex: 0 0 120px; border: 1px solid red;}
+.navs > .mn_navs {flex: 1 1 860px; display: flex; border: 1px solid green;}
+.navs > .schs {flex: 0 0 200px; border: 1px solid blue; display: flex; align-items: center;}
+.navs > .schs > .form_sch {position: relative;}
+.navs > .schs > .form_sch > input {width: 110px; margin-left: 10px; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #333; padding: 4px; font-size: 0.75rem;}
+.navs > .schs > .form_sch > i {position: absolute; top: 4px; right: 0;}
