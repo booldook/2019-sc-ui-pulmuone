@@ -1,3 +1,4 @@
+body {height: 10000px;}
 .container:not(:first-child) {margin-top: 150px;}
 .navs {background-color: hotpink; color:#fff;}
 .navs > li {float: left; padding: 1rem; width: 150px; text-align: center; position: relative; cursor: pointer;}
@@ -7,5 +8,11 @@
 
 .navs2 {background-color: hotpink; color:#fff;}
 .navs2 > div {float: left; padding: 1rem; width:150px; text-align: center;}
-.navs2 > ul {float: right;}
+.navs2 > ul {float: right; padding-right: 1rem;}
 .navs2 > ul > li {float: left; padding: 1rem; width: 150px; text-align: center; cursor: pointer;}
+.subs2 {width: 100%; padding: 1rem 0; background-color: lightpink;}
+.subs2 > ul {float: right; padding-right: 1rem;}
+.subs2 > ul > li {float: left;}
+.subs2 .sub {width: 150px;}
+.subs2 .sub > li {padding: 1rem; text-align: center; cursor: pointer;}
+.subs2 .sub > li:hover {background-color: indigo; color: #fff;}
