@@ -7,10 +7,10 @@ body {height: 10000px;}
 .subs > li:hover {background-color: lightpink; color: indigo;}
 
 .navs2 {background-color: hotpink; color:#fff;}
-.navs2 > div {float: left; padding: 1rem; width:150px; text-align: center;}
+.navs2 > div:first-child {float: left; padding: 1rem; width:150px; text-align: center;}
 .navs2 > ul {float: right; padding-right: 1rem;}
 .navs2 > ul > li {float: left; padding: 1rem; width: 150px; text-align: center; cursor: pointer;}
-.subs2 {width: 100%; padding: 1rem 0; background-color: lightpink;}
+.subs2 {width: 100%; padding: 1rem 0; background-color: lightpink; border:1px solid #00f;}
 .subs2 > ul {float: right; padding-right: 1rem;}
 .subs2 > ul > li {float: left;}
 .subs2 .sub {width: 150px;}
