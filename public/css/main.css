@@ -8,11 +8,17 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 
 /***** 네비게이션 *****/
 .tops {display: flex; justify-content: flex-end; align-items: center; font-size: 0.75rem; height: 3rem;}
+.tops a:link, .tops a:visited {color: #444;}
+.tops a:hover, .tops a:active {color: #6a0;}
+.tops > :first-child > a:link, .tops > :first-child > a:visited {color: #6a0;}
+
 .tops > span {padding:0 1rem; font-size: 0.5rem;}
 .navs {display: flex; align-items: center; padding-bottom: 1.5rem;}
+.navs a:link, .navs a:visited {color: #444; text-decoration: none;}
+.navs a:hover, .navs a:active {color: #6a0; text-decoration: none;}
 .navs > .logo {flex: 0 0 150px;}
 .navs > .mn_navs {flex: 1 1 830px; display: flex;}
-.navs > .mn_navs > li {font-size:1rem;}
+.navs > .mn_navs > li {font-size: 1rem; text-align: center;}
 .navs > .mn_navs > li:nth-child(1) {width: 185px;}
 .navs > .mn_navs > li:nth-child(2) {width: 140px;}
 .navs > .mn_navs > li:nth-child(3) {width: 112px;}
