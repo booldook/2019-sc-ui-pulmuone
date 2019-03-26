@@ -60,3 +60,9 @@ $("#slides3").mouseover(function(){
 $("#slides3").mouseleave(function(){
 	interval3 = setInterval(ani3, 3000);
 });
+$("#pager3 > li").click(function(){
+	clearInterval(interval3);
+	var k = $(this).index();
+	wid3 = (k * -100) + 100;
+	ani3();
+});

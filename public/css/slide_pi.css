@@ -1,0 +1,12 @@
+.container {max-width: 720px;}
+
+/* pager */
+.cycle-pager { 
+	text-align: center; width: 100%; z-index: 500; position: absolute; bottom: 10px; overflow: hidden;
+}
+.cycle-pager span { 
+	font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+	display: inline-block; color: #111; cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active { color: red;}
+.cycle-pager > * { cursor: pointer;}
