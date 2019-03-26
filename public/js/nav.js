@@ -25,3 +25,12 @@ $("#navs4 > li").mouseover(function(){
 $("#navs4 > li").mouseleave(function(){
 	$(this).find(".subs").stop().slideUp(200);	
 });
+
+$("#navs4-1 > li").click(function(){
+	$(this).find(".subs").stop().slideToggle(200);
+});
+
+$("#navs4-2 > li").click(function(){
+	$("#navs4-2").find(".subs").stop().slideUp(200);
+	$(this).find(".subs").stop().slideToggle(200);
+});
