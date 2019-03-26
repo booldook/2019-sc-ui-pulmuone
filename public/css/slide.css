@@ -15,12 +15,18 @@
 
 /***** 공통사항 *****/
 body {height: 10000px;}
-.slide_wrap {width: 100%; overflow: hidden;}
+.slide_wrap {width: 100%; overflow: hidden; position: relative;}
+.container {width: 720px;}
 .container:not(:first-child) {margin-top: 200px;}
+.pager {display: flex; justify-content: center; width: 100%; position: absolute; bottom:20px;}
+.pager > li {text-align: center; flex: 0 0 30px; font-size: 0.75rem; cursor: pointer; color: white;}
 
 /***** Flex 모델 *****/
 .slides1 {width: 600%; display: flex; position: relative;}
-.slides1 > .slide1 {flex: 1 1 100%;}
+.slides1 > .slide {flex: 1 1 100%;}
 
 .slides2 {width: 500%; display: flex; position: relative;}
-.slides2 > .slide2 {flex: 1 1 100%;}
+.slides2 > .slide {flex: 1 1 100%;}
+
+.slides3 {width: 600%; display: flex; position: relative;}
+.slides3 > .slide {flex: 1 1 100%;}
