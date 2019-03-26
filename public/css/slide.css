@@ -1,5 +1,5 @@
 body {height: 10000px;}
-.slide_wrap {}
+.slide_wrap {width:100%; overflow: hidden;}
 
 /*
 .slides1 {width: 500%;}
@@ -11,3 +11,4 @@ body {height: 10000px;}
 .slides1 > :nth-child(3) {left: 200%;}
 .slides1 > :nth-child(4) {left: 300%;}
 .slides1 > :nth-child(5) {left: 400%;}
+.slides1 > :nth-child(6) {left: 500%;}
