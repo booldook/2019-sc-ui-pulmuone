@@ -1,5 +1,13 @@
 body {height: 10000px;}
 .slide_wrap {}
 
+/*
 .slides1 {width: 500%;}
 .slides1 > .slide1 {width: 20%; float: left;} 
+*/
+.slides1 {width: 100%; position: relative;}
+.slides1 > .slide1 {width: 100%; position: absolute; top: 0;}
+.slides1 > :nth-child(2) {left: 100%;}
+.slides1 > :nth-child(3) {left: 200%;}
+.slides1 > :nth-child(4) {left: 300%;}
+.slides1 > :nth-child(5) {left: 400%;}
