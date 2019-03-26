@@ -20,6 +20,7 @@ body {height: 10000px;}
 .container:not(:first-child) {margin-top: 200px;}
 .pager {display: flex; justify-content: center; width: 100%; position: absolute; bottom:20px;}
 .pager > li {text-align: center; flex: 0 0 30px; font-size: 0.75rem; cursor: pointer; color: white;}
+.pager > li:first-child {color: red;}
 
 /***** Flex 모델 *****/
 .slides1 {width: 600%; display: flex; position: relative;}

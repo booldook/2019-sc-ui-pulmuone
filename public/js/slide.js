@@ -1,3 +1,4 @@
+/***** 가로형 1번 ******/
 var wid = 0;
 var interval = setInterval(ani1, 3000);
 function ani1(){
@@ -16,6 +17,8 @@ $("#slides1").mouseleave(function(){
 	interval = setInterval(ani1, 3000);
 });
 
+
+/***** 가로형 2번 ******/
 var k2 = -100;
 var wid2 = 0;
 var interval2 = setInterval(ani2, 3000);
@@ -31,4 +34,29 @@ $("#slides2").mouseover(function(){
 });
 $("#slides2").mouseleave(function(){
 	interval2 = setInterval(ani2, 3000);
+});
+
+
+/***** 가로형 3번 ******/
+var page = 0;
+var wid3 = 0;
+var interval3 = setInterval(ani3, 3000);
+function ani3(){
+	wid3 -= 100; // wid = wid - 100;
+	$("#slides3").stop().animate({"left": wid3+"%"}, 500, function(){
+		page = Math.abs(wid3/100);
+		if(wid3 == -500) {
+			wid3 = 0;
+			page = 0;
+			$(this).css({"left": 0});
+		}
+		$(".pager > li").css({"color": "white"});
+		$(".pager > li").eq(page).css({"color": "red"});
+	});
+}
+$("#slides3").mouseover(function(){
+	clearInterval(interval3);
+});
+$("#slides3").mouseleave(function(){
+	interval3 = setInterval(ani3, 3000);
 });
