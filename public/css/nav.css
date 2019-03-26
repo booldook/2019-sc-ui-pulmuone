@@ -2,9 +2,9 @@ body {height: 10000px;}
 .container:not(:first-child) {margin-top: 150px;}
 .navs {background-color: hotpink; color:#fff;}
 .navs > li {float: left; padding: 1rem; width: 150px; text-align: center; position: relative; cursor: pointer;}
-.subs {background-color: indigo; padding: 0.5rem; position: absolute; width: 100%; left: 0; top:3.1rem; display: none;}
-.subs > li {padding: 0.5rem; cursor: pointer;}
-.subs > li:hover {background-color: lightpink; color: indigo;}
+.navs .subs {background-color: indigo; padding: 0.5rem; position: absolute; width: 100%; left: 0; top:3.1rem; display: none;}
+.navs .subs > li {padding: 0.5rem; cursor: pointer;}
+.navs .subs > li:hover {background-color: lightpink; color: indigo;}
 
 .navs2 {background-color: hotpink; color:#fff; position: relative;}
 .navs2 > div:first-child {float: left; padding: 1rem; width:150px; text-align: center;}
@@ -27,3 +27,11 @@ body {height: 10000px;}
 .subs3 .sub {width: 150px;}
 .subs3 .sub > li {padding: 1rem; text-align: center; cursor: pointer;}
 .subs3 .sub > li:hover {background-color: indigo; color: #fff;}
+
+.navs4_wrap {display: flex; justify-content: space-around;}
+.navs4 {width: 150px;}
+.navs4 > li {cursor: pointer;}
+.navs4 > li > div {padding: 0.5rem; background-color: indianred;}
+.navs4 > li > ul {background-color: lightgreen; display: none;}
+.navs4 > li > ul > li {padding: 0.5rem;}
+.navs4 > li > ul > li:hover {background-color: maroon; color: white;}

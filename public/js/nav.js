@@ -1,20 +1,27 @@
 $("#navs1 > li").mouseover(function(){
-	$(this).find(".subs").slideDown(1000);
+	$(this).find(".subs").stop().slideDown(100);
 });
 $("#navs1 > li").mouseleave(function(){
-	$(this).find(".subs").slideUp(1000);
+	$(this).find(".subs").stop().slideUp(100);
 });
 
 $("#navs2 > ul > li").mouseover(function(){
-	$(".subs2").slideDown(1000);
+	$(".subs2").stop().slideDown(100);
 });
 $("#navs2").mouseleave(function(){
-	$(".subs2").slideUp(1000);
+	$(".subs2").stop().slideUp(100);
 });
 
 $("#navs3 .mn_nav").mouseover(function(){
-	$(".subs3").slideDown(1000);
+	$(".subs3").stop().slideDown(100);
 });
 $("#navs3 > ul").mouseleave(function(){
-	$(".subs3").slideUp(1000);
+	$(".subs3").stop().slideUp(100);
+});
+
+$("#navs4 > li").mouseover(function(){
+	$(this).find(".subs").stop().slideDown(200);
+});
+$("#navs4 > li").mouseleave(function(){
+	$(this).find(".subs").stop().slideUp(200);	
 });
