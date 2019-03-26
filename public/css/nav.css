@@ -35,3 +35,15 @@ body {height: 10000px;}
 .navs4 > li > ul {background-color: lightgreen; display: none;}
 .navs4 > li > ul > li {padding: 0.5rem;}
 .navs4 > li > ul > li:hover {background-color: maroon; color: white;}
+
+.navs5_wrap {display: flex; justify-content: space-around;}
+.navs5 {width: 150px;}
+.navs5 > li {cursor: pointer; position: relative;}
+.navs5 > li > div {padding: 0.5rem; background-color: indianred;}
+.navs5 > li > ul {background-color: lightgreen; position: absolute; width: 100%; top: 0; left: 100%; border: 1px solid red; display: none;}
+.navs5 > li > ul > li {padding: 0.5rem;}
+.navs5 > li > ul > li:hover {background-color: maroon; color: white;}
+
+#navs5-1 {position: relative;}
+#navs5-1 > li {position: static;}
+#navs5-1 > li > ul {top: 1rem;}

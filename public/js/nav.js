@@ -34,3 +34,10 @@ $("#navs4-2 > li").click(function(){
 	$("#navs4-2").find(".subs").stop().slideUp(200);
 	$(this).find(".subs").stop().slideToggle(200);
 });
+
+$(".navs5 > li").mouseover(function(){
+	$(this).find(".subs").stop().fadeIn(500);
+});
+$(".navs5 > li").mouseleave(function(){
+	$(this).find(".subs").stop().fadeOut(500);	
+});
