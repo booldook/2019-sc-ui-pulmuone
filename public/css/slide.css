@@ -1,10 +1,9 @@
-body {height: 10000px;}
-.slide_wrap {width:100%; overflow: hidden;}
-
-/*
+/* // Float 모델
 .slides1 {width: 500%;}
 .slides1 > .slide1 {width: 20%; float: left;} 
 */
+
+/* // Position 모델
 .slides1 {width: 100%; position: relative;}
 .slides1 > .slide1 {width: 100%; position: absolute; top: 0;}
 .slides1 > :nth-child(2) {left: 100%;}
@@ -12,3 +11,16 @@ body {height: 10000px;}
 .slides1 > :nth-child(4) {left: 300%;}
 .slides1 > :nth-child(5) {left: 400%;}
 .slides1 > :nth-child(6) {left: 500%;}
+*/
+
+/***** 공통사항 *****/
+body {height: 10000px;}
+.slide_wrap {width: 100%; overflow: hidden;}
+.container:not(:first-child) {margin-top: 200px;}
+
+/***** Flex 모델 *****/
+.slides1 {width: 600%; display: flex; position: relative;}
+.slides1 > .slide1 {flex: 1 1 100%;}
+
+.slides2 {width: 500%; display: flex; position: relative;}
+.slides2 > .slide2 {flex: 1 1 100%;}
