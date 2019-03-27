@@ -66,3 +66,11 @@ $("#pager3 > li").click(function(){
 	wid3 = (k * -100) + 100;
 	ani3();
 });
+
+/***** 세로형 1번 ******/
+var tar4 = 0;
+var interval4 = setInterval(ani4, 3000);
+function ani4() {
+	tar4 -= $("#slides4").find(".slide").eq(0).outerHeight();
+	$("#slides4").stop().animate({"top": tar4+"px"}, 800, function(){});
+}
