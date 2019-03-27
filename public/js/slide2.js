@@ -7,6 +7,9 @@ var interval = setInterval(ani, 3000);
 function ani(){
 	inha = inha - 100;
 	$(".slides").stop().animate({"left": inha+"%"}, 500, function(){
-		
+		if(inha == -400) {
+			inha = 0;
+			$(".slides").css({"left": 0});
+		}
 	});
 }

@@ -67,8 +67,26 @@ $("#pager3 > li").click(function(){
 	ani3();
 });
 
-/***** 세로형 1번 ******/
 /*
+var st = 0;
+var ed = $("#slides4 > .slide").length - 1;
+for(var i=0; i<=ed; i++) {
+	$("#slides4 > .slide").eq(i).css({"top":(i*100)+"%"});
+}
+var interval4 = setInterval(ani4, 3000);
+function ani4() {
+	st++;	//st = st + 1; st = st + 10 => st += 10
+	var top = $("#slides4 > .slide").eq(0).outerHeight() * -st;
+	$("#slides4").stop().animate({"top": top+"px"}, 500, function(){
+		if(st == ed) {
+			st = 0;
+			$("#slides4").css({"top": 0});
+		}
+	});
+}
+*/
+
+/***** 세로형 1번 ******/
 var tar4 = 0;
 var st = 0;
 var ed = $("#slides4 > .slide").length - 1;
@@ -86,22 +104,53 @@ function ani4() {
 		}
 	});
 }
-*/
 
-var st = 0;
-var ed = $("#slides4 > .slide").length - 1;
-for(var i=0; i<=ed; i++) {
-	$("#slides4 > .slide").eq(i).css({"top":(i*100)+"%"});
+/***** 세로형 1번 - Pause ******/
+var tar5 = 0;
+var st5 = 0;
+var ed5 = $("#slides5 > .slide").length - 1;
+for(var i=0; i<=ed5; i++) {
+	$("#slides5 > .slide").eq(i).css({"top":(i*100)+"%"});
 }
-var interval4 = setInterval(ani4, 3000);
-function ani4() {
-	st++;	//st = st + 1; st = st + 10 => st += 10
-	var top = $("#slides4 > .slide").eq(0).outerHeight() * -st;
-	$("#slides4").stop().animate({"top": top+"px"}, 500, function(){
-		if(st == ed) {
-			st = 0;
-			$("#slides4").css({"top": 0});
+var interval5 = setInterval(ani5, 3000);
+function ani5() {
+	st5++;	//st = st + 1;
+	tar5 = $("#slides5").find(".slide").eq(0).outerHeight() * -st5;
+	$("#slides5").stop().animate({"top": tar5+"px"}, 800, function(){
+		if(st5 == ed5) {
+			st5 = 0;
+			$("#slides5").css({"top": 0});
 		}
 	});
 }
+$("#slides5").mouseover(function(){
+	clearInterval(interval5);
+});
+$("#slides5").mouseleave(function(){
+	interval5 = setInterval(ani5, 3000);
+});
 
+
+/***** 세로형 1번 - Pager ******/
+var tar6 = 0;
+var st6 = 0;
+var ed6 = $("#slides6 > .slide").length - 1;
+for(var i=0; i<=ed6; i++) {
+	$("#slides6 > .slide").eq(i).css({"top":(i*100)+"%"});
+	if(i < ed6) {
+		$(".pager_vert").append('<li><i class="fas fa-circle"></i></li>');
+	}
+}
+var interval6 = setInterval(ani6, 3000);
+function ani6() {
+	st6++;	//st = st + 1;
+	tar6 = $("#slides6").find(".slide").eq(0).outerHeight() * -st6;
+	$("#slides6").stop().animate({"top": tar6+"px"}, 800, function(){
+		if(st6 == ed6) {
+			st6 = 0;
+			$("#slides6").css({"top": 0});
+		}
+		$(".pager_vert > li").css({"color":"beige"});
+		$(".pager_vert > li").eq(st6).css({"color":"brown"});
+	});
+}
