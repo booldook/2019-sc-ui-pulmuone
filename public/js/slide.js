@@ -161,3 +161,34 @@ $(".pager_vert > li").click(function(){
 	ani6();
 	interval6 = setInterval(ani6, 3000);
 });
+
+
+/***** FadeIn/Out *****/
+var depth = 100;
+var st7 = 0;
+var ed7 = $("#slides7 > .slide").length - 1;
+for(var i=0; i<=ed7; i++) {
+	$(".pager_horz").append('<li><i class="fas fa-circle"></i></li>');
+}
+var interval7 = setInterval(ani7, 4000);
+function ani7() {
+	$(".pager_horz > li").css({"color": "beige"});
+	$(".pager_horz > li").eq(st7).css({"color": "brown"});
+	$("#slides7 > .slide").eq(st7).css({"z-index":depth++, "opacity": 0});
+	$("#slides7 > .slide").eq(st7).stop().animate({"opacity": 1}, 1000, function(){
+		if(st7 == ed7) st7 = 0;
+		else st7++;
+	});
+}
+$("#slides7").mouseover(function(){
+	clearInterval(interval7);
+});
+$("#slides7").mouseleave(function(){
+	interval7 = setInterval(ani7, 4000);
+});
+$(".pager_horz > li").click(function(){
+	clearInterval(interval7);
+	st7 = $(this).index();
+	ani7();
+	interval7 = setInterval(ani7, 4000);
+});
