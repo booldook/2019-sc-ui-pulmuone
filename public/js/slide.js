@@ -69,8 +69,16 @@ $("#pager3 > li").click(function(){
 
 /***** 세로형 1번 ******/
 var tar4 = 0;
+var st = 0;
+var ed = $("#slides4 > .slide").length - 1;
 var interval4 = setInterval(ani4, 3000);
 function ani4() {
-	tar4 -= $("#slides4").find(".slide").eq(0).outerHeight();
-	$("#slides4").stop().animate({"top": tar4+"px"}, 800, function(){});
+	st++;	//st = st + 1;
+	tar4 = $("#slides4").find(".slide").eq(0).outerHeight() * -st;
+	$("#slides4").stop().animate({"top": tar4+"px"}, 800, function(){
+		if(st == ed) {
+			st = 0;
+			$("#slides4").css({"top": 0});
+		}
+	});
 }
