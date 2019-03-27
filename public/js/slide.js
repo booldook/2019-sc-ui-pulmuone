@@ -71,6 +71,9 @@ $("#pager3 > li").click(function(){
 var tar4 = 0;
 var st = 0;
 var ed = $("#slides4 > .slide").length - 1;
+for(var i=0; i<=ed; i++) {
+	$("#slides4 > .slide").eq(i).css({"top":(i*100)+"%"});
+}
 var interval4 = setInterval(ani4, 3000);
 function ani4() {
 	st++;	//st = st + 1;

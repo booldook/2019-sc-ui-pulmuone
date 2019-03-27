@@ -34,9 +34,3 @@ body {height: 10000px;}
 
 .slides4 {width: 100%; position: relative;}
 .slides4 > .slide {position: absolute;}
-.slides4 > :nth-child(2) {top: 0;}
-.slides4 > :nth-child(3) {top: 100%;}
-.slides4 > :nth-child(4) {top: 200%;}
-.slides4 > :nth-child(5) {top: 300%;}
-.slides4 > :nth-child(6) {top: 400%;}
-.slides4 > :nth-child(7) {top: 500%;}
