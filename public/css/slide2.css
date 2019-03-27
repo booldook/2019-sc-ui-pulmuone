@@ -1,0 +1,6 @@
+/* .slide_wrap > .slides > .slide > img */
+.container {width: 300px;}
+.slide_wrap {border:10px solid red;}
+.slides {width: 500%; display: flex; left: 0; position: relative;}
+.slides > .slide {flex: 1 1 100%;}
+

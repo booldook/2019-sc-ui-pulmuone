@@ -15,7 +15,7 @@
 
 /***** 공통사항 *****/
 body {height: 10000px;}
-.slide_wrap {width: 100%; overflow: hidden; position: relative;}
+.slide_wrap {width: 100%; overflow:hidden; position: relative;}
 .container {width: 720px;}
 .container:not(:first-child) {margin-top: 200px;}
 .pager {display: flex; justify-content: center; width: 100%; position: absolute; bottom:20px;}
@@ -34,3 +34,4 @@ body {height: 10000px;}
 
 .slides4 {width: 100%; position: relative;}
 .slides4 > .slide {position: absolute;}
+

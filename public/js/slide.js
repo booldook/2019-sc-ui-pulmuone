@@ -68,6 +68,7 @@ $("#pager3 > li").click(function(){
 });
 
 /***** 세로형 1번 ******/
+/*
 var tar4 = 0;
 var st = 0;
 var ed = $("#slides4 > .slide").length - 1;
@@ -85,3 +86,22 @@ function ani4() {
 		}
 	});
 }
+*/
+
+var st = 0;
+var ed = $("#slides4 > .slide").length - 1;
+for(var i=0; i<=ed; i++) {
+	$("#slides4 > .slide").eq(i).css({"top":(i*100)+"%"});
+}
+var interval4 = setInterval(ani4, 3000);
+function ani4() {
+	st++;	//st = st + 1; st = st + 10 => st += 10
+	var top = $("#slides4 > .slide").eq(0).outerHeight() * -st;
+	$("#slides4").stop().animate({"top": top+"px"}, 500, function(){
+		if(st == ed) {
+			st = 0;
+			$("#slides4").css({"top": 0});
+		}
+	});
+}
+
