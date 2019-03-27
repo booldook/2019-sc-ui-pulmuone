@@ -154,3 +154,10 @@ function ani6() {
 		$(".pager_vert > li").eq(st6).css({"color":"brown"});
 	});
 }
+$(".pager_vert > li").click(function(){
+	clearInterval(interval6);
+	if($(this).index() > 0) st6 = $(this).index() - 1;
+	else st6 = ed6 - 1;
+	ani6();
+	interval6 = setInterval(ani6, 3000);
+});

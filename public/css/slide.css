@@ -41,6 +41,6 @@ body {height: 10000px;}
 .slides6 {width: 100%; position: relative;}
 .slides6 > .slide {position: absolute;}
 .pager_vert {position: absolute; top: 50%; transform: translateY(-50%); right: 10px; z-index: 100; color: beige; font-size: 0.5rem; }
-.pager_vert > li {margin-bottom: 0.5rem;}
+.pager_vert > li {margin-bottom: 0.5rem; cursor: pointer;}
 .pager_vert > li > i {text-shadow: 0 0 10px rgba(0,0,0,0.3);}
 
