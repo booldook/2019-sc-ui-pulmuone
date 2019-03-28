@@ -13,6 +13,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .tops > :first-child > a:link, .tops > :first-child > a:visited {color: #6a0;}
 
 .tops > span {padding:0 1rem; font-size: 0.5rem;}
+.navs_wraps {width: 100%; position: relative;}
 .navs {display: flex; align-items: center; padding-bottom: 1.5rem;}
 .navs a:link, .navs a:visited {color: #444; text-decoration: none;}
 .navs a:hover, .navs a:active {color: #6a0; text-decoration: none;}
