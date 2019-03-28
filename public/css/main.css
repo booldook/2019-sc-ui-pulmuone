@@ -5,6 +5,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 /***** 공통사항 *****/
 .wraps {width: 100%;}
 .wrap {width: 100%; max-width: 1180px; margin: 0 auto;}
+.page {width: 100%; height: 100%;}
 
 /***** 네비게이션 *****/
 .tops {display: flex; justify-content: flex-end; align-items: center; font-size: 0.75rem; height: 3rem;}
@@ -13,8 +14,8 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .tops > :first-child > a:link, .tops > :first-child > a:visited {color: #6a0;}
 
 .tops > span {padding:0 1rem; font-size: 0.5rem;}
-.navs_wraps {width: 100%; position: relative;}
-.navs {display: flex; align-items: center; padding-bottom: 1.5rem;}
+.navs_wraps {width: 100%; position: relative; z-index: 9999;}
+.navs {display: flex; align-items: center; padding-bottom: 1.5rem; position: relative; z-index: 9999;}
 .navs a:link, .navs a:visited {color: #444; text-decoration: none;}
 .navs a:hover, .navs a:active {color: #6a0; text-decoration: none;}
 .navs > .logo {flex: 0 0 150px;}
@@ -33,7 +34,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 
 .sb_navs_wraps {position: absolute; background-color: white; border-top: 3px solid #74984e; display: none;}
 .sb_navs {display: flex;}
-.sb_navs > li {flex-grow: 1; padding-top: 2rem; text-align: center; color: #999;}
+.sb_navs > li {flex-grow: 1; padding: 2rem 0; text-align: center; color: #999;}
 .sb_navs > li:not(:first-child) {border-left: 1px solid #ccc;}
 .sb_navs > li:nth-child(1) {width: 150px; text-align: left;}
 .sb_navs > li:nth-child(2) {width: 182px;}
@@ -55,4 +56,8 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .sb_bans > li {flex: 1 1 50%;}
 .sb_bans > li:first-child {text-align: right; background-color: #ecdea1;}
 .sb_bans > li:last-child {text-align: left; background-color: #8bc43f;}
-/* #625042 */
+
+
+/***** page1 *****/
+#page1 {height: calc(100% - 112px); overflow: hidden;}
+.mn_video {width: 100%;}
