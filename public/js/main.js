@@ -17,3 +17,10 @@ $(".sb_hover").mouseleave(function(){
 	$(this).css({"background-color":"#fff"});
 	$(".sb_hover").find("i").hide();
 });
+
+/***** 광고 노출 *****/
+var sbBan = ['sb_ban2.jpg', 'sb_ban3.jpg'];
+var sbColor = ['#8bc43f', '#625042'];
+var sbNum = Math.round(Math.random());
+$(".sb_choi").attr("src", "../img/"+sbBan[sbNum]);
+$(".sb_choi").parent().css({"background-color": sbColor[sbNum]});
