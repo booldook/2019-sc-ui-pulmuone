@@ -14,8 +14,17 @@ function zeroPlus(n) {
 	else return n;
 }
 
+// 이미지 호버 교체
+$(".img_hover").mouseover(function(){
+	$(this).attr("src", $(this).data("hover"));
+});
+$(".img_hover").mouseleave(function(){
+	$(this).attr("src", $(this).data("src"));
+});
+
+
 // jQuery UI init
 $(document).ready(function(){
 	//spinner init
-	$(".spinner").spinner({ min: 1 });
+	//$(".spinner").spinner({ min: 1 });
 });

@@ -73,9 +73,9 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .mn_video {width: 100%;}
 .mn_links {position: absolute; z-index: 2; bottom: 20%; display: flex; 
 	left: 0; right: 0; margin: 0 auto; justify-content: center;}
-.mn_link {width: 240px; text-align: center;}
+.mn_link {width: 220px; text-align: center;}
 .mn_link > img {width: 130px;}
-.mn_link > div {width: 100%; margin-top: 1rem; font-size: 1.5rem;}
+.mn_link > div {width: 100%; margin-top: 1rem; font-size: 1.25rem;}
 .mn_link:not(:last-child) > div {border-right: 1px solid #fff;}
 .mn_link a {color: #fff; text-decoration: none;}
 .mn_link a:hover {text-decoration: underline;}
