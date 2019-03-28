@@ -30,3 +30,21 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .navs > .schs > .form_sch {position: relative;}
 .navs > .schs > .form_sch > input {width: 110px; margin-left: 10px; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #333; padding: 4px; font-size: 0.75rem; outline: none;}
 .navs > .schs > .form_sch > i {position: absolute; top: 4px; right: 0;}
+
+.sb_navs_wraps {background-color: white; border-top: 3px solid #74984e; display: none;}
+.sb_navs {display: flex;}
+.sb_navs > li {flex-grow: 1; padding-top: 2rem; text-align: center; color: #999;}
+.sb_navs > li a:link, .sb_navs > li a:visited {color: #999; text-decoration: none;}
+.sb_navs > li a:hover, .sb_navs > li a:active {color: #fff; text-decoration: underline;}
+.sb_navs .sb_hover a {display: inline-block; width: 100%; padding:0.5rem 0;}
+.sb_navs .sb_hover a:hover {background-color: #74984e;}
+.sb_navs .sb_hover a.a_grn:link, .sb_navs .sb_hover a.a_grn:visited {color: #74984e;}
+.sb_navs .sb_hover a.a_grn:hover, .sb_navs .sb_hover a.a_grn:active {color: #fff;}
+.sb_navs > li:not(:first-child) {border-left: 1px solid #ccc;}
+.sb_navs > li:nth-child(1) {width: 150px; text-align: left;}
+.sb_navs > li:nth-child(2) {width: 182px;}
+.sb_navs > li:nth-child(3) {width: 145px;}
+.sb_navs > li:nth-child(4) {width: 112px;}
+.sb_navs > li:nth-child(5) {width: 116px;}
+.sb_navs > li:nth-child(6) {width: 110px;}
+.sb_navs > li:nth-child(7) {width: 373px; text-align: right; padding-top: 150px;}
