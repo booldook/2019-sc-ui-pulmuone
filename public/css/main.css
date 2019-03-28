@@ -51,3 +51,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .sb_navs .sb_hover a.a_grn:hover, .sb_navs .sb_hover a.a_grn:active {color: #fff;}
 .sb_navs .sb_hover {position: relative;}
 .sb_navs .sb_hover > i {font-size: 1.5rem; color: #74984e; position: absolute; top: -18px; left: 50%; transform: translateX(-50%); display: none;}
+.sb_bans {display: flex;}
+.sb_bans > li {flex: 1 1 50%;}
+.sb_bans > li:first-child {text-align: right; background-color: #ecdea1;}
+.sb_bans > li:last-child {text-align: left; background-color: #8bc43f;}

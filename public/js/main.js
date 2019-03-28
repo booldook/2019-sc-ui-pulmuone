@@ -10,6 +10,7 @@ $(".navs_wraps").mouseleave(function(){
 
 $(".sb_hover").mouseover(function(){
 	$(this).css({"background-color":"#f9fbf6"});
+	$(".sb_hover").find("i").hide();
 	$(this).find("i").show();
 });
 $(".sb_hover").mouseleave(function(){
