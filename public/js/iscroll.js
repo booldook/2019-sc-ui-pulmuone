@@ -2168,3 +2168,9 @@ if ( typeof module != 'undefined' && module.exports ) {
 }
 
 })(window, document, Math);
+
+function wheelPrevent(obj) {
+	return new IScroll(obj, { mouseWheel: true });
+}
+
+
