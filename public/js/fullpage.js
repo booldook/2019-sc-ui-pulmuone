@@ -1,7 +1,3 @@
-var myScroll = new IScroll('.pages', {
-	mouseWheel: true
-});
-
 $(window).mousewheel(pageWheel);
 function pageWheel(e){
 	console.log(e.deltaX, e.deltaY, e.deltaFactor);

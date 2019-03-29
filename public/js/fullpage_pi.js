@@ -1,5 +1,15 @@
-var myScroll = new IScroll('#wrapper', {mouseWheel: true});
+new IScroll('#wrapper', { mouseWheel: true });
 
-$(window).on("mousewheel DOMMouseScroll", function(){
-	console.log("HI");
+$("#wrapper").onepage_scroll({
+	sectionContainer: ".pages",
+	easing: "ease",
+	animationTime: 300, 
+	pagination: true, 
+	updateURL: false, 
+	beforeMove: function (index) {}, 
+	afterMove: function (index) {}, 
+	loop: false, 
+	keyboard: false, 
+	responsiveFallback: false, 
+	direction: "vertical" 
 });
