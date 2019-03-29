@@ -5,7 +5,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 /***** 공통사항 *****/
 .wraps {width: 100%;}
 .wrap {width: 100%; max-width: 1180px; margin: 0 auto;}
-.page {width: 100%; height: 100%;}
+.pages {width: 100%; height: 100%;}
 
 /***** 애니메이션 *****/
 .ani_jump:hover {animation-name: jump; animation-duration: 0.2s;}
@@ -69,7 +69,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 
 
 /***** page1 *****/
-#page1 {height: calc(100% - 112px); overflow: hidden; position: relative;}
+#page1 {height: 100%; overflow: hidden; position: relative;}
 .mn_video {width: 100%;}
 .mn_links {position: absolute; z-index: 2; bottom: 20%; display: flex; 
 	left: 0; right: 0; margin: 0 auto; justify-content: center;}
@@ -79,3 +79,9 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .mn_link:not(:last-child) > div {border-right: 1px solid #fff;}
 .mn_link a {color: #fff; text-decoration: none;}
 .mn_link a:hover {text-decoration: underline;}
+
+#page2 {background-color: mediumorchid;}
+#page3 {background-color: moccasin;}
+#page4 {background-color: paleturquoise;}
+#page5 {background-color: sandybrown}
+#footer {background-color: skyblue;}

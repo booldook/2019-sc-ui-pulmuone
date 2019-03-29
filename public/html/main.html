@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,116 +15,124 @@
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/wow.min.js"></script>
+	<script src="../js/jquery.mousewheel.min.js"></script>
+	<script src="../js/iscroll.js"></script>
+	<script src="../js/booldook-page.js"></script>
 </head>
+
 <body>
-	<ul class="tops wrap">
-		<li><a href="#">KOREAN</a></li>
-		<span>|</span>
-		<li><a href="#">ENGLISH</a></li>
-		<span>|</span>
-		<li><a href="#">CHINESE</a></li>
-		<span>|</span>
-		<li><a href="#">JAPANESE</a></li>
-	</ul>
-	<nav class="navs_wraps wraps">
-		<div class="navs wrap">
-			<div class="logo">
-				<a href="#"><img src="../img/logo.gif" alt="로고"></a>
-			</div>
-			<ul class="mn_navs">
-				<li><a href="#">#자연을 담는 큰 그릇</a></li>
-				<li><a href="#">바른먹거리 & 로하스</a></li>
-				<li><a href="#">뉴스룸</a></li>
-				<li><a href="#">회사소개</a></li>
-				<li><a href="#">인재채용</a></li>
-				<li><a href="#">고객기쁨센터</a></li>
-			</ul>
-			<div class="schs">
-				<a href="#"><img src="../img/btn_shop.gif" alt=""></a>
-				<form action="#" class="form_sch">
-					<input type="text" name="mn_sch" placeholder="바른먹거리">
-					<i id="bt_mn_sch" class="fas fa-search pointer"></i>
-				</form>
-			</div>
-		</div>
-		<div class="sb_navs_wraps wraps">
-			<ul class="sb_navs wrap">
-				<li><img src="../img/gnb_sec01_img0_on.png" alt="" class="sb_medal"></li>
-				<li class="sb_hover">
-					<i class="fas fa-caret-up"></i>
-				</li>
-				<li class="sb_hover">
-					<i class="fas fa-caret-up"></i>
-					<ul>
-						<li><a href="#">로하스</a></li>
-						<li><a href="#">바른먹거리 원칙</a></li>
-						<li><a href="#">바른먹거리 캠페인</a></li>
-						<li><a href="#">요즘은 이런食 캠페인</a></li>
-						<li><a href="#" class="a_grn">육칼챌린지</a></li>
-					</ul>
-				</li>
-				<li class="sb_hover">
-					<i class="fas fa-caret-up"></i>
-					<ul>
-						<li><a href="#">풀무원뉴스</a></li>
-						<li><a href="#">이슈와 칼럼</a></li>
-						<li><a href="#">로하스 레시피</a></li>
-						<li><a href="#">멀티미디어</a></li>
-						<li><a href="#">자료&공지</a></li>
-					</ul>
-				</li>
-				<li class="sb_hover">
-					<i class="fas fa-caret-up"></i>
-					<ul>
-						<li><a href="#">총괄 CEO 인사말</a></li>
-						<li><a href="#">가치체계</a></li>
-						<li><a href="#">히스토리</a></li>
-						<li><a href="#">동반성장경영</a></li>
-						<li><a href="#">사회책임경영</a></li>
-						<li><a href="#">지속경영</a></li>
-						<li><a href="#">IR</a></li>
-						<li><a href="#">기업지배구조</a></li>
-						<li><a href="#">풀무원 사업</a></li>
-						<li><a href="#">풀무원 브랜드</a></li>
-						<li><a href="#">CI 소개</a></li>
-					</ul>
-				</li>
-				<li class="sb_hover">
-					<i class="fas fa-caret-up"></i>
-					<ul>
-						<li><a href="#">인재모시기</a></li>
-						<li><a href="#">인재키우기</a></li>
-						<li><a href="#">인재도우미</a></li>
-						<li><a href="#">한눈에 보는 풀무원</a></li>
-					</ul>
-				</li>
-				<li><img src="../img/tDebth_more_bt1.jpg" alt="이벤트 더보기" class="ani_jump"></li>
-			</ul>
-			<ul class="sb_bans">
-				<li><img src="../img/sb_ban1.jpg" alt=""></li>
-				<li><img src="" alt="" class="sb_choi"></li>
-			</ul>
-		</div>
-	</nav>
 	<section class="pages" id="page1">
+		<ul class="tops wrap">
+			<li><a href="#">KOREAN</a></li>
+			<span>|</span>
+			<li><a href="#">ENGLISH</a></li>
+			<span>|</span>
+			<li><a href="#">CHINESE</a></li>
+			<span>|</span>
+			<li><a href="#">JAPANESE</a></li>
+		</ul>
+		<nav class="navs_wraps wraps">
+			<div class="navs wrap">
+				<div class="logo">
+					<a href="#"><img src="../img/logo.gif" alt="로고"></a>
+				</div>
+				<ul class="mn_navs">
+					<li><a href="#">#자연을 담는 큰 그릇</a></li>
+					<li><a href="#">바른먹거리 & 로하스</a></li>
+					<li><a href="#">뉴스룸</a></li>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">고객기쁨센터</a></li>
+				</ul>
+				<div class="schs">
+					<a href="#"><img src="../img/btn_shop.gif" alt=""></a>
+					<form action="#" class="form_sch">
+						<input type="text" name="mn_sch" placeholder="바른먹거리">
+						<i id="bt_mn_sch" class="fas fa-search pointer"></i>
+					</form>
+				</div>
+			</div>
+			<div class="sb_navs_wraps wraps">
+				<ul class="sb_navs wrap">
+					<li><img src="../img/gnb_sec01_img0_on.png" alt="" class="sb_medal"></li>
+					<li class="sb_hover">
+						<i class="fas fa-caret-up"></i>
+					</li>
+					<li class="sb_hover">
+						<i class="fas fa-caret-up"></i>
+						<ul>
+							<li><a href="#">로하스</a></li>
+							<li><a href="#">바른먹거리 원칙</a></li>
+							<li><a href="#">바른먹거리 캠페인</a></li>
+							<li><a href="#">요즘은 이런食 캠페인</a></li>
+							<li><a href="#" class="a_grn">육칼챌린지</a></li>
+						</ul>
+					</li>
+					<li class="sb_hover">
+						<i class="fas fa-caret-up"></i>
+						<ul>
+							<li><a href="#">풀무원뉴스</a></li>
+							<li><a href="#">이슈와 칼럼</a></li>
+							<li><a href="#">로하스 레시피</a></li>
+							<li><a href="#">멀티미디어</a></li>
+							<li><a href="#">자료&공지</a></li>
+						</ul>
+					</li>
+					<li class="sb_hover">
+						<i class="fas fa-caret-up"></i>
+						<ul>
+							<li><a href="#">총괄 CEO 인사말</a></li>
+							<li><a href="#">가치체계</a></li>
+							<li><a href="#">히스토리</a></li>
+							<li><a href="#">동반성장경영</a></li>
+							<li><a href="#">사회책임경영</a></li>
+							<li><a href="#">지속경영</a></li>
+							<li><a href="#">IR</a></li>
+							<li><a href="#">기업지배구조</a></li>
+							<li><a href="#">풀무원 사업</a></li>
+							<li><a href="#">풀무원 브랜드</a></li>
+							<li><a href="#">CI 소개</a></li>
+						</ul>
+					</li>
+					<li class="sb_hover">
+						<i class="fas fa-caret-up"></i>
+						<ul>
+							<li><a href="#">인재모시기</a></li>
+							<li><a href="#">인재키우기</a></li>
+							<li><a href="#">인재도우미</a></li>
+							<li><a href="#">한눈에 보는 풀무원</a></li>
+						</ul>
+					</li>
+					<li><img src="../img/tDebth_more_bt1.jpg" alt="이벤트 더보기" class="ani_jump"></li>
+				</ul>
+				<ul class="sb_bans">
+					<li><img src="../img/sb_ban1.jpg" alt=""></li>
+					<li><img src="" alt="" class="sb_choi"></li>
+				</ul>
+			</div>
+		</nav>
 		<video class="mn_video" autoplay loop>
 			<source src="../img/170123_pulmuone_3m.mp4" type="video/mp4">
 		</video>
 		<ul class="mn_links">
 			<li class="mn_link">
-				<img src="../img/main_sec01_img1.png" data-src="../img/main_sec01_img1.png" data-hover="../img/main_sec01_img1_on.png" class="img_hover">
+				<img src="../img/main_sec01_img1.png" data-src="../img/main_sec01_img1.png"
+					data-hover="../img/main_sec01_img1_on.png" class="img_hover">
 				<div><a href="#">바른먹거리 & 로하스</a></div>
 			</li>
 			<li class="mn_link">
-				<img src="../img/main_sec01_img2.png" data-src="../img/main_sec01_img2.png" data-hover="../img/main_sec01_img2_on.png" class="img_hover">
+				<img src="../img/main_sec01_img2.png" data-src="../img/main_sec01_img2.png"
+					data-hover="../img/main_sec01_img2_on.png" class="img_hover">
 				<div><a href="#">사회책임경영</a></div>
 			</li>
 			<li class="mn_link">
-				<img src="../img/main_sec01_img3.png" data-src="../img/main_sec01_img3.png" data-hover="../img/main_sec01_img3_on.png" class="img_hover">
+				<img src="../img/main_sec01_img3.png" data-src="../img/main_sec01_img3.png"
+					data-hover="../img/main_sec01_img3_on.png" class="img_hover">
 				<div><a href="#">뉴스룸</a></div>
 			</li>
 			<li class="mn_link">
-				<img src="../img/main_sec01_img4.png" data-src="../img/main_sec01_img4.png" data-hover="../img/main_sec01_img4_on.png" class="img_hover">
+				<img src="../img/main_sec01_img4.png" data-src="../img/main_sec01_img4.png"
+					data-hover="../img/main_sec01_img4_on.png" class="img_hover">
 				<div><a href="#">회사소개</a></div>
 			</li>
 		</ul>
@@ -132,11 +141,10 @@
 	<section class="pages" id="page3"></section>
 	<section class="pages" id="page4"></section>
 	<section class="pages" id="page5"></section>
-	<footer class="page" id="footer"></footer>
-	
+	<footer class="pages" id="footer"></footer>
+
 	<script src="../js/util.js"></script>
 	<script src="../js/main.js"></script>
 </body>
+
 </html>
-
-
