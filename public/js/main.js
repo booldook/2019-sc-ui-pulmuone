@@ -27,3 +27,9 @@ var sbColor = ['#8bc43f', '#625042'];
 var sbNum = Math.round(Math.random());
 $(".sb_choi").attr("src", "../img/"+sbBan[sbNum]);
 $(".sb_choi").parent().css({"background-color": sbColor[sbNum]});
+
+/***** 팝업관리 *****/
+$("#bt_pop_close").click(function(){
+	$(".pops").hide();
+	$(".yt_video")[0].contentWindow.postMessage('{"event":"command","func":"'+'stopVideo'+'"}', '*');
+});
