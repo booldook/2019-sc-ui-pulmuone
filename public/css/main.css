@@ -85,3 +85,10 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 #page4 {background-color: paleturquoise;}
 #page5 {background-color: sandybrown}
 #footer {background-color: skyblue;}
+
+
+/***** 모달팝업 *****/
+.pops {width: 320px; position: fixed; top: 150px; left: 100px; z-index: 99999; background-color: #fff;}
+.pops > .pop_tit {background-color: #74984e; color: #fff; text-align: right; padding: 0.5rem; font-size: 1.5rem;}
+.pops > .pop_cont {padding: 0.5rem; min-height: 200px;}
+.pops > .pop_foot {padding: 0.5rem; color: #666; text-align: right; font-size: 0.875rem;}
