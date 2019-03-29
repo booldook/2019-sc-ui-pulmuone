@@ -4,6 +4,7 @@ $(".thumbs img").click(function(){
 });
 $(".thumbs img").eq(0).trigger("click");
 
+
 $("#bpic").click(function(e){
 	var src = $(this).attr("src");
 	$(".modal_cont img").attr("src", src);
@@ -11,4 +12,8 @@ $("#bpic").click(function(e){
 });
 $(".bt_close").click(function(){
 	$(".modal_wrap").hide();
+});
+
+$("#bt_popup").click(function(){
+	window.open("win.html", "popup", "width=600, height=300, top=100, left=100");
 });
