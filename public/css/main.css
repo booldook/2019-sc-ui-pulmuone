@@ -14,6 +14,11 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 	50% {transform: translateY(-20px);}
 	100% {transform: translateY(0);}
 }
+.arrow_bot {animation-name: arrowBot; animation-duration: 0.4s; animation-iteration-count: infinite; animation-direction: alternate; border-bottom: 4px solid #fff; border-right: 4px solid #fff; position: absolute; width: 30px; height: 30px; left: 50%; right: 50%; margin: 0 auto; transform: rotate(45deg); z-index: 99;}
+@keyframes arrowBot {
+	0% {opacity: 0; bottom :80px;}
+	100% {opacity: 1; bottom :55px;}
+}
 
 
 /***** 네비게이션 *****/
@@ -79,6 +84,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .mn_link:not(:last-child) > div {border-right: 1px solid #fff;}
 .mn_link a {color: #fff; text-decoration: none;}
 .mn_link a:hover {text-decoration: underline;}
+.slogan_bot {background-color: rgba(0,0,0,0.3); width: 100%; padding: 1rem 0; color:#999; position: absolute; left: 0; bottom: 0; font-size: 0.5rem; text-align: center;}
 
 #page2 {background-color: mediumorchid;}
 #page3 {background-color: moccasin;}
