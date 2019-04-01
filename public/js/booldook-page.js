@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	for(var i=0; i<$(".pages").length; i++) {
-		$(".pagers").append('<div class="pager_def"></div>');
+		if(i == 0) $(".pagers").append('<div class="pager_sel"></div>');
+		else $(".pagers").append('<div class="pager_def"></div>');
 	}
 	wheelPrevent(".pages");
 	$(window).mousewheel(pageWheel);
@@ -19,17 +20,24 @@ $(document).ready(function(){
 				break;
 			}
 		}
-		//console.log(now);
 		if(e.deltaY == -1) {
 			// 휠을 밑으로 페이지는 위로
 			if(now < len - 1) {
-				$("html, body").stop().animate({"scrollTop": pos[now+1]+"px"}, 800);
+				$("html, body").stop().animate({"scrollTop": pos[now+1]+"px"}, 800, function(){
+					$(".pagers > div").attr("class", "");
+					$(".pagers > div").not($(".pagers > div").eq(now+1)).addClass("pager_def");
+					$(".pagers > div").eq(now+1).addClass("pager_sel");
+				});
 			}
 		}
 		else {
 			// 휠을 위로 페이지는 밑으로
 			if(now > 0) {
-				$("html, body").stop().animate({"scrollTop": pos[now-1]+"px"}, 800);
+				$("html, body").stop().animate({"scrollTop": pos[now-1]+"px"}, 800, function(){
+					$(".pagers > div").attr("class", "");
+					$(".pagers > div").not($(".pagers > div").eq(now-1)).addClass("pager_def");
+					$(".pagers > div").eq(now-1).addClass("pager_sel");
+				});
 			}
 		}
 	}
