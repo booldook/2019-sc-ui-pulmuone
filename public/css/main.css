@@ -91,8 +91,8 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .slogan_bot {background-color: rgba(0,0,0,0.3); width: 100%; padding: 1rem 0; color:#999; position: absolute; left: 0; bottom: 0; font-size: 0.5rem; text-align: center;}
 
 /***** page 공통사항 *****/
-.pages .page_tit2 {color: #333; font-weight: normal; padding: 2rem 0 1rem 0;}
-.pages .page_tit5 {color: #333; font-weight: normal; padding-bottom: 1.5rem;}
+.pages .page_tit2 {color: #333; font-weight: normal; padding: 4rem 0 2rem 0;}
+.pages .page_tit5 {color: #333; font-weight: normal; padding-bottom: 2rem;}
 
 /***** page2 *****/
 #page2 {background-color:#ece9de;}
@@ -105,11 +105,18 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 #page2 .camp_cont > li:nth-child(2) {color: #f8f8f8; font-size: 1.75rem; padding: 0.5rem 0; border-bottom: 1px solid #ccc; opacity: 0;}
 #page2 .camp_cont > li:nth-child(3) {color: #f8f8f8; padding: 0.5rem 0; opacity: 0;}
 
+/***** page3 *****/
+#page3 {background: url(../img/main_bg_3.jpg) no-repeat center; background-size: cover;}
+#page3 .page_tit2, #page3 .page_tit5 {color: #fff;}
+#page3 > .wraps {background-color: rgba(255,255,255,0.3);} 
+#page3 .slogans {display: flex; text-align: center; color:#f8f8f8;}
+#page3 .slogan {flex: 1 1; padding: 4rem 0;}
+#page3 .slogan_cont {width: 80%; margin: auto;}
+#page3 .slogan_cont > :nth-child(1) {height: 86px;}
+#page3 .slogan_cont > :nth-child(2) {font-size: 2rem; padding: 2rem 0; border-bottom: 1px solid #f8f8f8;}
+#page3 .slogan_cont > :nth-child(3) {padding: 1rem 0;}
 
 
-
-
-#page3 {background-color: moccasin;}
 #page4 {background-color: paleturquoise;}
 #page5 {background-color: sandybrown}
 #footer {background-color: skyblue;}
