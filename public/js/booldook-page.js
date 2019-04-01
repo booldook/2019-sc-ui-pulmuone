@@ -27,6 +27,7 @@ $(document).ready(function(){
 					$(".pagers > div").attr("class", "");
 					$(".pagers > div").not($(".pagers > div").eq(now+1)).addClass("pager_def");
 					$(".pagers > div").eq(now+1).addClass("pager_sel");
+					new WOW().init();
 				});
 			}
 		}
@@ -37,6 +38,7 @@ $(document).ready(function(){
 					$(".pagers > div").attr("class", "");
 					$(".pagers > div").not($(".pagers > div").eq(now-1)).addClass("pager_def");
 					$(".pagers > div").eq(now-1).addClass("pager_sel");
+					new WOW().init();
 				});
 			}
 		}
