@@ -98,10 +98,12 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 #page2 {background-color:#ece9de;}
 #page2 .camps {display: flex;}
 #page2 .camps > li {flex: 1 1; position: relative;}
-#page2 .camp_cont {position: absolute; width: 100%; top: 35%; left: 0; text-align: center;}
-#page2 .camp_cont > li:nth-child(2) {color: #f8f8f8;}
-
-
+#page2 .camps > :nth-child(1) {background-color: #3f3c33;}
+#page2 .camps > :nth-child(2) {background-color: #2c3f46;}
+#page2 .camps > :nth-child(3) {background-color: #729246;}
+#page2 .camp_cont {position: absolute; width: 70%; top: calc(50% - 60px); left: 15%; text-align: center;}
+#page2 .camp_cont > li:nth-child(2) {color: #f8f8f8; font-size: 1.75rem; padding: 0.5rem 0; border-bottom: 1px solid #ccc; opacity: 0;}
+#page2 .camp_cont > li:nth-child(3) {color: #f8f8f8; padding: 0.5rem 0; opacity: 0;}
 
 
 

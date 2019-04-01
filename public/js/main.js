@@ -21,6 +21,23 @@ $(".sb_hover").mouseleave(function(){
 	$(".sb_hover").find("i").hide();
 });
 
+/***** Page2 *****/
+$("#page2 .camps").find(".camp").mouseover(function(){
+	$(this).children("img").hide();
+	var src = $(this).children(".camp_cont").find("img").data("hover");
+	$(this).children(".camp_cont").find("img").attr("src", src);
+	$(this).children(".camp_cont").find("li").eq(1).stop().animate({"opacity": 1}, 500);
+	$(this).children(".camp_cont").find("li").eq(2).stop().animate({"opacity": 1}, 500);
+});
+$("#page2 .camps").find(".camp").mouseleave(function(){
+	$(this).children("img").show();
+	var src = $(this).children(".camp_cont").find("img").data("src");
+	$(this).children(".camp_cont").find("img").attr("src", src);
+	$(this).children(".camp_cont").find("li").eq(1).stop().animate({"opacity": 0}, 500);
+	$(this).children(".camp_cont").find("li").eq(2).stop().animate({"opacity": 0}, 500);
+});
+
+
 /***** 광고 노출 *****/
 var sbBan = ['sb_ban2.jpg', 'sb_ban3.jpg'];
 var sbColor = ['#8bc43f', '#625042'];
