@@ -90,7 +90,21 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 .mn_link a:hover {text-decoration: underline;}
 .slogan_bot {background-color: rgba(0,0,0,0.3); width: 100%; padding: 1rem 0; color:#999; position: absolute; left: 0; bottom: 0; font-size: 0.5rem; text-align: center;}
 
-#page2 {background-color: mediumorchid;}
+/***** page 공통사항 *****/
+.pages .page_tit2 {color: #333; font-weight: normal; padding: 2rem 0 1rem 0;}
+.pages .page_tit5 {color: #333; font-weight: normal; padding-bottom: 1.5rem;}
+
+/***** page2 *****/
+#page2 {background-color:#ece9de;}
+#page2 .camps {display: flex;}
+#page2 .camps > li {flex: 1 1; position: relative;}
+
+
+
+
+
+
+
 #page3 {background-color: moccasin;}
 #page4 {background-color: paleturquoise;}
 #page5 {background-color: sandybrown}
