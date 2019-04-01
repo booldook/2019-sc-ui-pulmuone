@@ -5,7 +5,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 /***** 공통사항 *****/
 .wraps {width: 100%;}
 .wrap {width: 100%; max-width: 1180px; margin: 0 auto;}
-.pages {width: 100%; height: 100%;}
+.pages {width: 100%; height: 100%; position: relative;}
 .pagers {position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index:99999;}
 .pagers > div {width: 12px; height: 12px; border-radius: 50%; margin: 1rem 0;}
 .pager_sel {background-color: #6a0; border: none;} 

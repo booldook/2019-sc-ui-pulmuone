@@ -1,3 +1,4 @@
+new WOW().init();
 $(document).ready(function(){
 	for(var i=0; i<$(".pages").length; i++) {
 		if(i == 0) $(".pagers").append('<div class="pager_sel"></div>');
