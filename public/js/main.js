@@ -30,9 +30,13 @@ $(".sb_choi").parent().css({"background-color": sbColor[sbNum]});
 
 /***** 팝업관리 *****/
 $("#bt_pop_close").click(function(){
-	if($("#today_show").is(":checked")) {
+	if(	$("#today_show").is(":checked")	) {
 		Cookies.set('popup_ignore', 'Y', { expires: 1 });
 	}
 	$(".pops").hide();
 	$(".yt_video")[0].contentWindow.postMessage('{"event":"command","func":"'+'stopVideo'+'"}', '*');
 });
+
+if(Cookies.get("popup_ignore") == "Y") {
+	$(".pops").hide();
+}
