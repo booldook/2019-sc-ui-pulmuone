@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	for(var i=0; i<$(".pages").length; i++) {
+		$(".pagers").append('<div class="pager_def"></div>');
+	}
 	wheelPrevent(".pages");
 	$(window).mousewheel(pageWheel);
 	function pageWheel(e){
