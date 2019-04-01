@@ -98,6 +98,8 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 #page2 {background-color:#ece9de;}
 #page2 .camps {display: flex;}
 #page2 .camps > li {flex: 1 1; position: relative;}
+#page2 .camp_cont {position: absolute; width: 100%; top: 35%; left: 0; text-align: center;}
+#page2 .camp_cont > li:nth-child(2) {color: #f8f8f8;}
 
 
 
