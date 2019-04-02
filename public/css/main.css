@@ -145,10 +145,32 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 #page5 > .page_rt > li:nth-child(4) .info_mask {background-color: #444c37; top: 0; left: 0;}
 
 /***** footer *****/
-#footer {background-color: skyblue;}
-
-
-
+#footer {padding:3rem 0; text-align: center; width: 100%; max-width: 700px; margin: auto; color: #999; height: auto;}
+#footer .footer_logo {margin-bottom: 2.5rem;}
+#footer .footer_navs {margin-bottom: 1.5rem;}
+#footer .footer_navs > ul {display: flex; align-items: center;}
+#footer .footer_navs > ul > li{flex: 1 1; border-right: 1px solid #ccc; }
+#footer .footer_navs > ul > li:nth-child(1) {flex-basis: 15%;}
+#footer .footer_navs > ul > li:nth-child(2) {flex-basis: 25%;}
+#footer .footer_navs > ul > li:nth-child(3) {flex-basis: 10%;}
+#footer .footer_navs > ul > li:nth-child(4) {flex-basis: 10%;}
+#footer .footer_navs > ul > li:nth-child(5) {flex-basis: 10%;}
+#footer .footer_addr {margin-bottom: 1.5rem; font-size: 0.875rem;}
+#footer .footer_addr {margin-bottom: 1rem; font-size: 0.875rem;}
+#footer .footer_copy {margin-bottom: 3rem; font-size: 0.875rem;}
+#footer .footer_brands {margin-bottom: 3rem; font-size: 0.875rem; display: flex; justify-content: center; align-items: center;}
+#footer .brand_links {flex: 0 1 50%; display: flex; justify-content: center; align-items: center;}
+#footer .brand_links > li {flex: 1 1 20%;}
+#footer .brand_links > li:not(:first-child) {flex: 0 1; padding: 0 0.5rem;}
+#footer .family_links {flex: 0 1 250px; position: relative; padding: 0.5rem 1rem; border: 3px solid #ccc; margin-left: 4rem; text-align: left;}
+#footer .family_links > .fa-caret-down {position: absolute; right: 10px;}
+#footer .family_subs {width: 600px; position: absolute; border: 3px solid #ccc; bottom: -4px; right: -4px; background-color: #fff; padding: 2rem; display: none;}
+#footer .family_subs > dl {width: 30%; float: left;}
+#footer .family_subs > dl:nth-child(2) {margin:0 5%;}
+#footer .family_subs > dl > dt {padding:0.5rem 0; border-bottom: 1px solid #ccc; margin-bottom: 1rem; color: #333;}
+#footer a:link, #footer a:visited {color: #999; text-decoration: none;}
+#footer a:hover {text-decoration: underline;}
+#footer .footer_navs li:first-child > a:link, #footer .footer_navs li:first-child > a:visited {color: #185c36;}
 /***** 모달팝업 *****/
 .pops {width: 320px; position: fixed; top: 150px; left: 100px; z-index: 99999; background-color: #fff;}
 .pops > .pop_tit {background-color: #74984e; color: #fff; text-align: right; padding: 0.5rem; font-size: 1.5rem;}

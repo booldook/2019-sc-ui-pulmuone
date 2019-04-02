@@ -57,6 +57,15 @@ $("#page5").children(".page_rt").children("li").mouseleave(function(){
 });
 
 
+/***** footer *****/
+$(".family_links").click(function(){
+	$(this).find(".family_subs").show();
+});
+$(".family_links").mouseleave(function(){
+	$(this).find(".family_subs").hide();
+});
+
+
 /***** 광고 노출 *****/
 var sbBan = ['sb_ban2.jpg', 'sb_ban3.jpg'];
 var sbColor = ['#8bc43f', '#625042'];
