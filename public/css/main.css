@@ -127,17 +127,17 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 /***** page5 *****/
 #page5 {display: flex; background-color: #fff; color: #fff;}
 #page5 .page_lt {flex: 1 1 40%; display: flex; justify-content: flex-end; align-items: center;background-color: #82a058;}
-#page5 .page_rt {flex: 1 1 60%; display: flex; flex-wrap: wrap; align-items: center;}
 #page5 .page_lt > div {flex: 0 1 60%;}
 #page5 .page_tit2, #page5 .page_tit5 {color: #f8f8f8; line-height: 1.5;}
+#page5 .page_rt {flex: 1 1 60%; display: flex; flex-wrap: wrap; align-items: center;}
 #page5 .page_rt > li {flex: 0 1 50%; height: 50%; background-repeat: no-repeat; background-size: cover; position: relative;}
-#page5 .page_rt > li:nth-child(1) {background-color: #b8b686; background-image: url(../img/s04_list_img1.jpg); }
-#page5 .page_rt > li:nth-child(2) {background-color: #9ab475; background-image: url(../img/s04_list_img2.jpg); }
-#page5 .page_rt > li:nth-child(3) {background-color: #8e8b78; background-image: url(../img/s04_list_img3.jpg); }
-#page5 .page_rt > li:nth-child(4) {background-color: #7d8b68; background-image: url(../img/s04_list_img4.jpg); }
+#page5 .page_rt > li:nth-child(1) {background-color: #b8b686; background-image: url(../img/s04_list_img1.jpg);}
+#page5 .page_rt > li:nth-child(2) {background-color: #9ab475; background-image: url(../img/s04_list_img2.jpg);}
+#page5 .page_rt > li:nth-child(3) {background-color: #8e8b78; background-image: url(../img/s04_list_img3.jpg);}
+#page5 .page_rt > li:nth-child(4) {background-color: #7d8b68; background-image: url(../img/s04_list_img4.jpg);}
 #page5 .info_tit {margin-top: 35%; text-align: center;}
-#page5 .info_tit > :nth-child(1) {font-size: 2rem; padding-bottom: 1rem; border-bottom: 5px solid #fff; display: inline-block;}
-#page5 .info_tit > :nth-child(2) {line-height: 1.5; margin-top: 1rem;}
+#page5 .info_tit > li:nth-child(1) {font-size: 2rem; padding-bottom: 1rem; display: inline-block;}
+#page5 .info_tit > li:nth-child(2) {line-height: 1.5; margin-top: 1rem; display: none;}
 #page5 .info_mask {position: absolute; width: 100px; height: 100px; opacity: 0.7;}
 #page5 > .page_rt > li:nth-child(1) .info_mask {background-color: #cecd95; bottom: 0; right: 0;}
 #page5 > .page_rt > li:nth-child(2) .info_mask {background-color: #849c62; bottom: 0; left: 0;}

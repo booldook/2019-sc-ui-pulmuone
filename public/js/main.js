@@ -38,6 +38,25 @@ $("#page2 .camps").find(".camp").mouseleave(function(){
 });
 
 
+/***** Page 5 *****/
+//var bgSrc = ['../img/s04_list_img1.jpg', '../img/s04_list_img2.jpg', '../img/s04_list_img3.jpg', '../img/s04_list_img4.jpg'];
+//var n = $(this).index();
+//$(this).css({"background-image": "url("+bgSrc[n]+")"});
+
+$("#page5").children(".page_rt").children("li").mouseover(function(){
+	$(this).css({"background-image": "none"});
+	$(this).children(".info_tit").children("li").stop().hide();
+	$(this).children(".info_tit").children("li").eq(0).css({"border-bottom": "5px solid #fff"});
+	$(this).children(".info_tit").children("li").stop().fadeIn(500);
+});
+$("#page5").children(".page_rt").children("li").mouseleave(function(){
+	$(this).css({"background-image": "url("+$(this).data("bg")+")"});
+	$(this).children(".info_tit").children("li").stop().hide();
+	$(this).children(".info_tit").children("li").eq(0).css({"border-bottom": "none"});
+	$(this).children(".info_tit").children("li").eq(0).stop().fadeIn(500);
+});
+
+
 /***** 광고 노출 *****/
 var sbBan = ['sb_ban2.jpg', 'sb_ban3.jpg'];
 var sbColor = ['#8bc43f', '#625042'];
