@@ -115,12 +115,21 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 #page3 .slogan_cont > :nth-child(1) {height: 86px;}
 #page3 .slogan_cont > :nth-child(2) {font-size: 2rem; padding: 2rem 0; border-bottom: 1px solid #f8f8f8;}
 #page3 .slogan_cont > :nth-child(3) {padding: 1rem 0;}
+
+/***** page4 *****/
 #page4 {background-color: #fff;}
+#page4 > .wrap {display: flex;}
+#page4 .page_lt {flex: 1 1 25%;} 
+#page4 .page_rt {flex: 1 1 75%; display: flex; justify-content: space-between; flex-wrap: wrap; padding-top: 4rem; color: #666; line-height: 1.5; font-size: 0.875rem;}
+#page4 .page_rt > .news {flex: 0 1 30%; margin-bottom: 2rem;}
+#page4 .page_rt > .news li:last-child {padding-top:1rem;}
 
-
-
+/***** page5 *****/
 #page5 {background-color: sandybrown}
+
+/***** footer *****/
 #footer {background-color: skyblue;}
+
 
 
 /***** 모달팝업 *****/
