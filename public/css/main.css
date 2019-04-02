@@ -171,6 +171,8 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 #footer a:link, #footer a:visited {color: #999; text-decoration: none;}
 #footer a:hover {text-decoration: underline;}
 #footer .footer_navs li:first-child > a:link, #footer .footer_navs li:first-child > a:visited {color: #185c36;}
+
+
 /***** 모달팝업 *****/
 .pops {width: 320px; position: fixed; top: 150px; left: 100px; z-index: 99999; background-color: #fff;}
 .pops > .pop_tit {background-color: #74984e; color: #fff; text-align: right; padding: 0.5rem; font-size: 1.5rem;}
