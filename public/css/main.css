@@ -115,9 +115,10 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 #page3 .slogan_cont > :nth-child(1) {height: 86px;}
 #page3 .slogan_cont > :nth-child(2) {font-size: 2rem; padding: 2rem 0; border-bottom: 1px solid #f8f8f8;}
 #page3 .slogan_cont > :nth-child(3) {padding: 1rem 0;}
+#page4 {background-color: #fff;}
 
 
-#page4 {background-color: paleturquoise;}
+
 #page5 {background-color: sandybrown}
 #footer {background-color: skyblue;}
 
