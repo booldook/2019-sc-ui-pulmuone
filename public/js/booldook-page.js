@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$(window).mousewheel(pageWheel);
 	function pageWheel(e){
 		new WOW().init();
-		console.log(e.deltaX, e.deltaY, e.deltaFactor);
+		//console.log(e.deltaX, e.deltaY, e.deltaFactor);
 		//console.log(e.pageY);
 		var len = $(".pages").length;		//4
 		var now = len - 1;							//3
