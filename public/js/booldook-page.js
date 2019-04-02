@@ -7,6 +7,7 @@ $(document).ready(function(){
 	wheelPrevent(".pages");
 	$(window).mousewheel(pageWheel);
 	function pageWheel(e){
+		new WOW().init();
 		console.log(e.deltaX, e.deltaY, e.deltaFactor);
 		//console.log(e.pageY);
 		var len = $(".pages").length;		//4
@@ -28,7 +29,6 @@ $(document).ready(function(){
 					$(".pagers > div").attr("class", "");
 					$(".pagers > div").not($(".pagers > div").eq(now+1)).addClass("pager_def");
 					$(".pagers > div").eq(now+1).addClass("pager_sel");
-					new WOW().init();
 				});
 			}
 		}
@@ -39,7 +39,6 @@ $(document).ready(function(){
 					$(".pagers > div").attr("class", "");
 					$(".pagers > div").not($(".pagers > div").eq(now-1)).addClass("pager_def");
 					$(".pagers > div").eq(now-1).addClass("pager_sel");
-					new WOW().init();
 				});
 			}
 		}
